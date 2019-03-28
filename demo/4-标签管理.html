@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>内容管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<script src='../js/html5shiv.js'> </script>
+		<script src='../js/response.min.js'></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/animate.css" />
+		<link rel="stylesheet" href="../css/biaoqianguanli.css" />
+	</head>
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id='nav'>
+			<div class="container">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navba">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			    </div>
+			    <div class="collapse navbar-collapse" id="navba">
+			        <ul class="nav navbar-nav navbar-left animated slideInDown">
+			            <li><a href="#">后台管理</a></li>
+			            <li><a href="1--后台管理.html"><span class="glyphicon glyphicon-home"></span>&nbsp;后台首页</a></li>
+			            <li><a href="2-用户管理.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+			            <li><a href="3-内容管理.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
+			            <li><a href="4-标签管理.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;标签管理</a></li>
+			        </ul>
+			         <ul class="nav navbar-nav navbar-right animated slideInRight">
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#"><span class="glyphicon glyphicon-screenshot"></sapn>&nbsp;前台首页</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a></li>		      
+				          </ul>
+				        </li>
+				         <li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+				      </ul>
+			    </div>
+		    </div>
+		</nav>
+		
+		<!--内容-->
+		<div id="table">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						TAG标签管理
+					</div>
+				</div>
+				<br />
+				<div class="col-md-10">
+						 <input type="text" class="form-control"  placeholder="请输要添加的标签">
+					</div>
+					<div class="col-md-2">
+						 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    添加
+						  </button>
+					</div>
+					<div class="col-md-7">
+					
+					<h1>
+					<span class="label label-info">bootstrap&nbsp;&nbsp;&nbsp;&nbsp;×</span>
+					<span class="label label-info">青软学院&nbsp;&nbsp;&nbsp;&nbsp;×</span>
+					<span class="label label-info">全栈课程&nbsp;&nbsp;&nbsp;&nbsp;×</span>
+					</h1>
+					</div>
+					<div class="col-md-5"></div>
+			</div>
+		</div>
+		
+			<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							Copyright&nbsp;&nbsp;&nbsp;©&nbsp;&nbsp;&nbsp;2018-2019&nbsp;&nbsp;ICP备案xxxxx号-4
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+			
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src='../js/bootstrap.min.js'></script>
+		<script src='../js/wow.min.js'></script>
+		<script>
+			$(function(){
+				new WOW().init();
+			});
+		</script>
+	</body>
+</html>

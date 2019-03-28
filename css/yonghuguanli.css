@@ -1,0 +1,59 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+/*导航*/
+#navba{
+	font-size: 18px;
+	line-height: 30px;
+}
+/*first*/
+#first{
+	padding-top: 80px;
+}
+#first .col-md-6 .col-md-12{
+	font-size:0.12rem;
+	line-height: 40px;
+	border-bottom: 2px solid #eeeeee;
+}
+#first .col-md-6{
+	border-radius: 5px;
+	margin-left: 20px;
+}
+#first #row{
+	background: #F5F5F5;
+	color:#000000;
+	font-weight: bold;
+}
+#first #roww{
+	color:#397EB9;
+}
+#table{
+	padding: 80px 0px;
+}
+#table .nav li a:hover{
+	background: #006699;
+}
+#myTabContent table input[type='button']{
+	background: #fff;
+	line-height: 20px;
+	color:black;
+	border:1px solid #9ACFEA;
+}
+#ios .row{
+	/*line-height: 35px;*/
+	border-radius: 5px;
+	padding-top:10px;
+	/*margin-top: 20px;*/
+	background:#D9EDF7;
+	color: #31708F;
+}
+footer{
+	color:black;
+	text-align: center;
+	padding:20px;
+}
+

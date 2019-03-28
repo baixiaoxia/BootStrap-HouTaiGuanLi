@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>用户管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<script src='../js/html5shiv.js'> </script>
+		<script src='../js/response.min.js'></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/animate.css" />
+		<link rel="stylesheet" href="../css/yonghuguanli.css" />
+	</head>
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id='nav'>
+			<div class="container">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navba">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			    </div>
+			    <div class="collapse navbar-collapse" id="navba">
+			        <ul class="nav navbar-nav navbar-left animated slideInDown">
+			            <li><a href="#">后台管理</a></li>
+			            <li><a href="1--后台管理.html"><span class="glyphicon glyphicon-home"></span>&nbsp;后台首页</a></li>
+			            <li><a href="2-用户管理.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+			            <li><a href="3-内容管理.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
+			            <li><a href="4-标签管理.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;标签管理</a></li>
+			        </ul>
+			         <ul class="nav navbar-nav navbar-right animated slideInRight">
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#"><span class="glyphicon glyphicon-screenshot"></sapn>&nbsp;前台首页</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a></li>		      
+				          </ul>
+				        </li>
+				         <li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+				      </ul>
+			    </div>
+		    </div>
+		</nav>
+		
+		<!--内容-->
+		<div id="table">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class='nav nav-tabs table-bordered'>
+							<div class="col-md-12"><li><a href="#home" class='btn' data-toggle='tab'>用户管理</a></li></div>
+							<div class="col-md-12"><li><a href="#ios" class='btn' data-toggle='tab'>用户搜索</a></li></div>
+							<div class="col-md-12"><li><a class="btn" data-toggle="modal" data-target="#denglu">添加用户</a></li></div>
+						</div>
+						
+					</div>
+					
+					<div class="col-md-10 " id="dz">
+						<h5>用户管理</h5>
+						<hr />
+						<ul id="myTab" class="nav nav-tabs">
+						    <li class="active">
+						        <a href="#home" data-toggle="tab">
+						            	用户管理
+						        </a>
+						    </li>
+						    <li><a href="#ios" data-toggle="tab">用户搜索</a></li>
+						    <li class="dropdown">
+						        <a  data-toggle="modal" data-target="#denglu">添加用户</a>
+						        </a>
+						    </li>
+						</ul>
+						
+						<div id="myTabContent" class="tab-content">
+						    <div class="tab-pane fade in active" id="home">
+						        <table class="table table-hover">
+							  	<thead>
+								    <tr>
+								      <th>ID</th>
+								      <th>用户名</th>
+								      <th>邮箱</th>
+								      <th>操作</th>
+								    </tr>
+							  	</thead>
+							  	<tbody>
+								    <tr>
+								      <td>1</td>
+								      <td>张三</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button>  		
+					  					<ul class="dropdown-menu">
+								            <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>	
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>2</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								          <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>				      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>3</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      <ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								          <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>				      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>4</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								          <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>			      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>5</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								           <ul class="dropdown-menu">
+								            <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>				      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>6</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								          <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>			      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>7</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								          <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>				      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>8</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								         <ul class="dropdown-menu">
+								            <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>					      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>9</td>
+								      <td>李四</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								         <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>					      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+								    <tr>
+								      <td>10</td>
+								      <td>王五</td>
+								      <td>123456789@qingruan.com</td>
+								      <td>
+								      	<ul>
+								      	<li class="dropdown">
+								      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    操作<span class="caret"></span>
+										  </button> 
+								          <ul class="dropdown-menu">
+								             <li><a href="#">编辑</a></li>
+								            <li><a href="#">删除</a></li>
+								            <li><a href="#">锁定</a></li>	
+								             <li><a href="#">修改密码</a></li>			            	      
+								          </ul>
+								        </li>
+								        </ul>
+								      </td>
+								    </tr>
+								    
+							  	</tbody>
+							</table>
+						    </div>
+							
+							 <div class="tab-pane fade" id="ios" style="border:1px solid #C4E3F3;padding:20px;">
+							 		<div class="row">
+							 			<div class="col-md-12">
+							 				 <p><span style="font-size: 2rem;">技巧提示:</span>支持模糊搜索和匹配搜索，匹配搜索使用*代替</p>
+							 			</div>
+							 		</div>
+						        
+						        	<form class="form-horizontal">
+									  <div class="form-group">
+									    <label for="inputEmail3" class=" control-label">用户名</label>
+									    <div class="">
+									      <input type="email" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="inputPassword3" class=" control-label">UID</label>
+									    <div class="">
+									      <input type="password" class="form-control" id="inputPassword3" placeholder="输入用户UID">
+									    </div>
+									  </div>
+									  <fieldset>
+				                        <div class="form-group">
+				                           <label for="data"  class=" control-label">选择用户组</label>
+				                           <div class="">
+				                              <select id="data" class="form-control">
+				                                 <option>限制会员</option>
+				                                 <option>非限制会员</option>
+				                              </select>
+				                           </div>
+				                        </div>
+				                      </fieldset>
+									</form>
+									
+								<button style="width: 80px;height: 30px;line-height: 30px;margin-left: -15px;background: #fff;border-radius: 5px; ">提交</button>
+						    </div>
+						   
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<nav>
+				  <ul class="pagination">
+				    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+				    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+  
+				  </ul>
+				</nav>
+						
+			</div>
+		</div>
+		</div>
+			<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							Copyright&nbsp;&nbsp;&nbsp;©&nbsp;&nbsp;&nbsp;2018-2019&nbsp;&nbsp;ICP备案xxxxx号-4
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+			
+			
+			
+			
+			<!-- 模态框部分 -->
+					<div class="modal fade" id="denglu" aria-hidden="true">
+					    <div class="modal-dialog">
+					        <div class="modal-content">
+					        	
+					        	
+					            <div class="modal-header">
+					                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					                <h4 class="modal-title" id="myModalLabel">填写登陆信息</h4>
+					            </div>
+					            
+					            <div class="modal-body">
+								 	<form action="#">
+					                    <div class="form-group">
+					                        <label for="addname">用户名</label>
+					                        <input type="text" id="addname" class="form-control" placeholder="用户名">
+					                    </div>
+					                    <div class="form-group">
+					                        <label for="addpassword">用户密码</label>
+					                        <input type="text" id="addpassword" class="form-control" placeholder="请输入用户密码">
+					                    </div>
+					                    <div class="form-group">
+					                        <label for="addpassword1">确认用户密码</label>
+					                        <input type="text" id="addpassword1" class="form-control" placeholder="请确认输入用户密码">
+					                    </div>
+					                    <div class="form-group">
+					                        <label for="addemail">请输入用户邮箱</label>
+					                        <input type="email" id="addemail" class="form-control" placeholder="请输入用户邮箱">
+					                    </div>
+					                    <div class="form-group">
+					                        <label for="addyonghuzu">所属用户组</label>
+					                        <select id="addyonghuzu" class="form-control">
+					                            <option>限制会员</option>
+					                            <option>新手上路</option>
+					                            <option>注册会员</option>
+					                            <option>中级会员</option>
+					                            <option>高级会员</option>
+					                        </select>
+					                    </div>
+					                </form>
+					            </div>
+					            
+					            <div class="modal-footer">
+					                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					                <button type="button" class="btn btn-success">提交</button>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src='../js/bootstrap.min.js'></script>
+		<script src='../js/wow.min.js'></script>
+		<script>
+			$(function(){
+				new WOW().init();
+			});
+		</script>
+	</body>
+</html>

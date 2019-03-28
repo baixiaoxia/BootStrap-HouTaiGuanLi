@@ -1,0 +1,77 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*导航*/
+#navba{
+	font-size: 18px;
+	line-height: 30px;
+}
+/*first*/
+#first{
+	padding-top: 80px;
+}
+#first .col-md-6 .col-md-12{
+	font-size:0.12rem;
+	line-height: 40px;
+	border-bottom: 2px solid #eeeeee;
+}
+#first .col-md-6{
+	border-radius: 5px;
+	margin-left: 20px;
+}
+#first #row{
+	background: #F5F5F5;
+	color:#000000;
+	font-weight: bold;
+}
+#first #roww{
+	
+	color:#397EB9;
+	
+}
+#second{
+	padding-top:40px;
+}
+#jindu{
+	line-height: 40px;
+	background: #F5F5F5;
+	border-bottom:1px solid #ccc ;
+}
+#second .col-md-5,.col-md-6{
+	border-radius:5px ;
+}
+#second .col-md-6{
+	border-radius:5px ;
+	margin-left: 20px;
+}
+/*three*/
+#three{
+	padding-top: 40px;
+}
+#three #du{
+	line-height:40px;
+	background: #F5F5F5;
+	margin:10px 20px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+#three #du .col-md-2{
+	padding: 15px 10px;
+}
+#three textarea{
+	resize: none;
+	height: 100px;
+}
+#three #input[type='submit']{
+	width: 60px;
+	color:black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+footer{
+	color:black;
+	text-align: center;
+	padding:20px;
+}
+
